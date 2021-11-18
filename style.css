@@ -118,12 +118,12 @@ header {
   margin: auto;
   padding: 100px 50px;
 }
-.transform-brand-text h1{
+.transform-brand-text h1 {
   font-family: var(--fraunces);
 }
-.transform-brand-text p#p-text{
+.transform-brand-text p#p-text {
   font-family: var(--barlow);
-  opacity: .6;
+  opacity: 0.6;
 }
 .brand-text img {
   width: 100%;
@@ -131,19 +131,40 @@ header {
   justify-content: center;
   align-items: center;
 }
-#btn-hover{
+#btn-hover {
   border-bottom: 10px solid yellow;
-  width:120px;
-  height:25px;
-  left:-.7px;
+  width: 120px;
+  height: 25px;
+  left: -0.7px;
   font-family: var(--fraunces);
-  border-radius:100px;
+  border-radius: 100px;
   cursor: pointer;
 }
 
-#btn-hover:hover{
-  opacity:.8;
+#btn-hover2 {
+  border-bottom: 10px solid pink;
+  width: 120px;
+  height: 25px;
+  left: -0.7px;
+  font-family: var(--fsraunces);
+  border-radius: 100px;
+  cursor: pointer;
 }
+
+#btn-hover:hover {
+  opacity: 0.8;
+}
+
+.service-img1 {
+  position: relative;
+}
+.graphic-design-text {
+  position: absolute;
+  text-align: center;
+  bottom: 40px;
+  padding: 0px 50px;
+}
+
 /*Services styling section ends */
 
 /*Testimonial styling section begins */
