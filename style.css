@@ -118,13 +118,32 @@ header {
   margin: auto;
   padding: 100px 50px;
 }
+.transform-brand-text h1{
+  font-family: var(--fraunces);
+}
+.transform-brand-text p#p-text{
+  font-family: var(--barlow);
+  opacity: .6;
+}
 .brand-text img {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+#btn-hover{
+  border-bottom: 10px solid yellow;
+  width:120px;
+  height:25px;
+  left:-.7px;
+  font-family: var(--fraunces);
+  border-radius:100px;
+  cursor: pointer;
+}
 
+#btn-hover:hover{
+  opacity:.8;
+}
 /*Services styling section ends */
 
 /*Testimonial styling section begins */
