@@ -105,6 +105,26 @@ header {
 
 /*Services styling section begins */
 
+.transform-brand-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transform-brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  margin: auto;
+  padding: 100px 50px;
+}
+.brand-text img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*Services styling section ends */
 
 /*Testimonial styling section begins */
