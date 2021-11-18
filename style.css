@@ -132,9 +132,9 @@ header {
   gap: 20px;
 }
 
-.testimonial-item .header-img img{
+.testimonial-item .header-img img {
   width: 100px;
- border-radius: 50%;
+  border-radius: 50%;
 }
 .testimonials h2,
 .testimonial-item .details span.name {
@@ -155,14 +155,14 @@ header {
 }
 
 .testimonial-item .testimonial,
-.testimonial-item .details span.name{
+.testimonial-item .details span.name {
   color: var(--very-dark-desaturated-blue);
 }
-.testimonial-item .details span.title{
-  font-size: .8em;
+.testimonial-item .details span.title {
+  font-size: 0.8em;
 }
 .testimonials h2,
-.testimonial-item .details span.title{
+.testimonial-item .details span.title {
   color: var(--grayish-blue);
 }
 /*Testimonial styling section ends */
