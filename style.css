@@ -207,5 +207,11 @@ header {
 /*Testimonial styling section ends */
 
 /*Projects styling section begins */
-
-/* Contact styling section ends*/
+#project-section img{
+  width: 25%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+/*Projects styling section ends */
