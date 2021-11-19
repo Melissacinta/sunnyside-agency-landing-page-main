@@ -14,6 +14,8 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 
+    <script defer src="./js/nav.js"></script>
+
     <title>Side Hustle Internship | Sunnyside agency landing page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -32,8 +34,15 @@
     <header>
       <div class="header-container">
         <div class="navbar-container">
-          <div id="logo"><p>sunnyside</p></div>
-          <nav id="topnav">
+          <div class="nav-header">
+            <div id="logo">
+              <p>sunnyside</p>       
+            </div>
+            <button class="nav-toggle">
+              <img src="./images/icon-hamburger.svg" alt="hambuger">
+            </button>
+          </div>
+          <nav id="topnav" class="arrow-top">
             <ul>
               <li><a href="#">About</a></li>
               <li><a href="#">Service</a></li>

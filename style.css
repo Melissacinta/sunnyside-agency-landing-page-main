@@ -58,21 +58,31 @@ header {
 #logo {
   font-family: var(--fraunces);
   font-weight: 900;
-  width: 160px;
+  /* width: 160px; */
+  display: flex;
+  align-items: center;
   font-size: 2rem;
   color: var(--white);
 }
-#topnav ul {
-  display: inline-block;
+#logo p{
+  margin: 0;
+}
+
+#topnav{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
   position: relative;
 }
-#topnav ul li {
-  display: inline-block;
-  padding-right: 2rem;
+#topnav ul{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 #topnav ul li a {
   text-decoration: none;
-  list-style-type: none;
   color: var(--white);
   cursor: pointer;
 }
@@ -100,7 +110,69 @@ header {
   letter-spacing: 0.5rem;
   text-transform: uppercase;
 }
+/* Toggle nav styling */
+ 
+.nav-toggle {
+    display: none;
+  }
+  .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+  }
+@media screen and (max-width: 376px) {
+  .navbar-container {
+    padding: 1rem 0;
+}
+  .nav-header{
+    flex: 1;
+  }
+  .nav-toggle {
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 0;
+  }
+  #topnav, #topnav ul{
+    flex-direction: column;
+    align-items: center;
+  }
 
+  #topnav{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -30%);
+    width: 90%; 
+    background-color: var(--white);
+    z-index: 100;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 9%, 93% 9%);
+  }
+  #topnav ul{
+    margin-top: 60px;
+  }
+  #topnav ul li a {
+    color: var(--dark-blue);
+    font-weight: 600;
+  }
+  #topnav button {
+    font-weight: 600;
+    background-color: var(--yellow);
+  }
+  #topnav button:hover {
+    background-color: rgba(255, 255, 0, 0.3);
+    color: var(--very-dark-desaturated-blue);
+  }
+  
+}
 /*About styling section ends */
 
 /*Services styling section begins */
