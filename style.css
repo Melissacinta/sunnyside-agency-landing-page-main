@@ -236,3 +236,18 @@ header {
   float: left;
 }
 /*Projects styling section ends */
+
+
+/* media query for the mobile view */
+@media screen and (min-width: 375px) {
+
+
+
+  #project-section img{
+    width: 50%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+    float: left;
+  }
+}
