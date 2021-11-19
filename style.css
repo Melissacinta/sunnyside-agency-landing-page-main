@@ -45,7 +45,7 @@ header {
   color: #fff;
 }
 .header-container {
-  text-align: center;
+  text-align: center; 
   width: 90vw;
   margin: 0 auto;
 }
@@ -121,58 +121,6 @@ header {
     justify-content: space-between;
     padding: 2rem 0;
   }
-@media screen and (max-width: 376px) {
-  .navbar-container {
-    padding: 1rem 0;
-}
-  .nav-header{
-    flex: 1;
-  }
-  .nav-toggle {
-    border-color: transparent;
-    display: flex;
-    align-items: center;
-    background: transparent;
-    transition: all 0.2s ease;
-    cursor: pointer;
-    margin-left: auto;
-    padding: 0;
-  }
-  #topnav, #topnav ul{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #topnav{
-    position: absolute;
-    left: 50%;
-    top: 35%;
-    transform: translate(-50%, -30%);
-    width: 90%; 
-    background-color: var(--white);
-    z-index: 100;
-    height: 0;
-    overflow: hidden;
-    transition: all 0.2s ease;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 9%, 93% 9%);
-  }
-  #topnav ul{
-    margin-top: 60px;
-  }
-  #topnav ul li a {
-    color: var(--dark-blue);
-    font-weight: 600;
-  }
-  #topnav button {
-    font-weight: 600;
-    background-color: var(--yellow);
-  }
-  #topnav button:hover {
-    background-color: rgba(255, 255, 0, 0.3);
-    color: var(--very-dark-desaturated-blue);
-  }
-  
-}
 /*About styling section ends */
 
 /*Services styling section begins */
@@ -309,11 +257,105 @@ header {
 }
 /*Projects styling section ends */
 
+/* Footer styling section begins */
+footer{
+  text-align: center;
+}
+#footer{
+  background-color: rgba(144,212,197,255);
+  padding-top: 32rem;
+}
+#footer .foot-logo{
+  text-align: center;
+  font-family: var(--barlow);
+  font-weight: bold;
+  font-size: 1rem;
+  color: #2C7566;
+}
+#footer .foot-logo h2{
+  font-weight: bold;
+}
+#footer .foot-nav ul{
+  text-align: center;
+  justify-content: center;
+}
+#footer .foot-nav ul li{
+  display: inline-block;
+  padding: 20px;
+  color: #2C7566;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+#footer .foot-nav ul li:hover{
+  color: var(--white);
+}
+#footer .foot-socials{
+  padding-bottom: 40px;
+}
+#footer .foot-socials img{
+  padding-left: 20px;
+  justify-content: center;
+  cursor: pointer;
+}
+#footer .foot-socials img:hover{
+  color: #fff;
+}
+/* Footer styling section ends */
+
+
 
 /* media query for the mobile view */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
+  .nav-header{
+    flex: 1;
+  }
+  .nav-toggle {
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin-left: auto;
+    padding: 0;
+  }
+  #topnav, #topnav ul{
+    flex-direction: column;
+    align-items: center;
+  }
 
-
+  #topnav{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -30%);
+    width: 90%; 
+    background-color: var(--white);
+    z-index: 100;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 9%, 93% 9%);
+  }
+  #topnav ul{
+    margin-top: 60px;
+  }
+  #topnav ul li a {
+    color: var(--dark-blue);
+    font-weight: 600;
+  }
+  #topnav button {
+    font-weight: 600;
+    background-color: var(--yellow);
+  }
+  #topnav button:hover {
+    background-color: rgba(255, 255, 0, 0.3);
+    color: var(--very-dark-desaturated-blue);
+  }
+  .navbar-container {
+    padding: 0rem;
+  }
 
   #project-section img{
     width: 50%;
@@ -321,5 +363,20 @@ header {
     padding: 0;
     margin: 0;
     float: left;
+  }
+  .header-container h1 {
+    margin-top: 45px;
+    margin-bottom: 75px;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+  }
+  .brand-text{
+    text-align: center;
+  }
+  #btn-hover{
+    margin: 0 auto;
+  }
+  #btn-hover2{
+    margin: 0 auto;
   }
 }
