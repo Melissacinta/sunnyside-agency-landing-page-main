@@ -42,7 +42,7 @@
               <img src="./images/icon-hamburger.svg" alt="hambuger">
             </button>
           </div>
-          <nav id="topnav" class="arrow-top">
+          <nav id="topnav">
             <ul>
               <li><a href="#">About</a></li>
               <li><a href="#">Service</a></li>
@@ -60,8 +60,8 @@
 
     <!-- Services section begins-->
     <section class="brand-text">
-      <div class="row g-0">
-        <div class="transform-brand-wrap col-lg-6">
+      <div class="row g-0 ">
+        <div class="transform-brand-wrap col-lg-6 bottom">
           <div class="transform-brand-text">
             <h1 class="py-3 fw-bold fs-1">Transform your brand</h1>
             <p class="text-break fw-light fs-5" id="p-text">
@@ -72,14 +72,22 @@
             <p class="my-4 fw-bold" id="btn-hover">LEARN MORE</p>
           </div>
         </div>
-        <div class="col-lg-6 brand-img1">
-          <img class="" src="./images/desktop/image-transform.jpg" alt="" />
+        <div class="col-lg-6 brand-img1 top">
+          <picture>
+            <source media="(max-width: 375px)" srcset="./images/mobile/image-transform.jpg">
+            <source media="(min-width: 376x)" srcset="./images/desktop/image-transform.jpg">
+            <img src="./images/desktop/image-transform.jpg" alt="transform">
+          </picture>
         </div>
       </div>
 
       <div class="row g-0">
         <div class="col-lg-6">
-          <img src="./images/desktop/image-stand-out.jpg" alt="" />
+          <picture>
+            <source media="(max-width: 375px)" srcset="./images/mobile/image-stand-out.jpg">
+            <source media="(min-width: 376x)" srcset="./images/desktop/image-stand-out.jpg">
+            <img src="./images/desktop/image-stand-out.jpg" alt="Stand out">
+          </picture>
         </div>
 
         <div class="transform-brand-wrap col-lg-6">
@@ -97,28 +105,29 @@
 
       <div class="row g-0">
         <div class="transform-brand-wrap service-img1 col-lg-6">
-          <img
-            class=""
-            src="./images/desktop/image-graphic-design.jpg"
-            alt=""
-          />
-          <div class="graphic-design-text">
+          <picture>
+            <source media="(max-width: 375px)" srcset="./images/mobile/image-graphic-design.jpg">
+            <source media="(min-width: 376x)" srcset="./images/desktop/image-graphic-design.jpg">
+            <img src="./images/desktop/image-graphic-design.jpg" alt="graphic design">
+          </picture>
+          <div class="graphic-design-text cyan">
             <h1 class="py-3 fw-bold fs-1">Graphic Design</h1>
             <p class="text-break fw-light fs-5" id="p-text">
-              Great design makes you memorable, We deliver artwork that
-              underscores your brand mssage and capyures potential clients'
-              attention
+              Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
             </p>
           </div>
         </div>
 
         <div class="transform-brand-wrap service-img1 col-lg-6">
-          <img src="./images/desktop/image-photography.jpg" alt="" />
-          <div class="graphic-design-text">
+          <picture>
+            <source media="(max-width: 375px)" srcset="./images/mobile/image-photography.jpg">
+            <source media="(min-width: 376x)" srcset="./images/desktop/image-photography.jpg">
+            <img src="./images/desktop/image-photography.jpg" alt="Photograhy">
+          </picture>
+          <div class="graphic-design-text blue">
             <h1 class="py-3 fw-bold fs-1">Photograhy</h1>
             <p class="text-break fw-light fs-5" id="p-text">
-              Increase your credibility by getting the most stunning high
-              quality potos that impove your business image
+              Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
             </p>
           </div>
         </div>
@@ -183,10 +192,26 @@
     <!-- Projects section begins-->
     <section>
       <div id="project-section">
-        <img src="./images/desktop/image-gallery-milkbottles.jpg" />
-        <img src="images/desktop/image-gallery-orange.jpg" />
-        <img src="images/desktop/image-gallery-cone.jpg" />
-        <img src="images/desktop/image-gallery-sugarcubes.jpg" />
+        <picture>
+          <source media="(max-width: 375px)" srcset="./images/mobile/image-gallery-milkbottles.jpg">
+          <source media="(min-width: 376x)" srcset="./images/desktop/image-gallery-milkbottles.jpg">
+          <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="milk bottles">
+        </picture>
+        <picture>
+          <source media="(max-width: 375px)" srcset="./images/mobile/image-gallery-orange.jpg">
+          <source media="(min-width: 376x)" srcset="./images/desktop/image-gallery-orange.jpg">
+          <img src="./images/desktop/image-gallery-orange.jpg" alt="orange">
+        </picture>
+        <picture>
+          <source media="(max-width: 375px)" srcset="./images/mobile/image-gallery-cone.jpg">
+          <source media="(min-width: 376x)" srcset="./images/desktop/image-gallery-cone.jpg">
+          <img src="./images/desktop/image-gallery-cone.jpg" alt="cone">
+        </picture>
+        <picture>
+          <source media="(max-width: 375px)" srcset="./images/mobile/image-gallery-sugar-cubes.jpg">
+          <source media="(min-width: 376x)" srcset="./images/desktop/image-gallery-sugarcubes.jpg">
+          <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes">
+        </picture>
       </div>
     </section>
     <!-- project section ends-->
